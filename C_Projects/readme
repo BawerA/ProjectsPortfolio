@@ -1,1 +1,10 @@
+#These files are a list of coding projects that I have created with the programming language C.
 
+#integerConversion.c is a code that allows the user to enter a number between 1-1,000,000. It will return the users number in decimal,
+hexidecimal, octal, and binary number then ask the user if they want to save the file into a text file.
+
+#integerbyNine.c is a program that ask the user to enter a number between 1-999999, once the user enters the number the program
+will response and add all the invidual digits of the number and see if it is divisable by 9.
+
+#numberProgram.c is a very simple program that I created that will ask the user for an integer to input. The program will take the
+integer and tells the user if the number is either positive or negative and if it is either even or odds.
