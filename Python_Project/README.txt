@@ -1,7 +1,5 @@
 ################################################################
-ReadMe File for Hashing Python Project.
-	Author name: Bawer Alissa
-	Assignment #: HW3 Hashing Python
+ReadMe File for jpg_FileChecker.py
 
 ################################################################
 
