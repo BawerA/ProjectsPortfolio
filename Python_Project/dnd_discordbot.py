@@ -59,6 +59,11 @@ async def roll12(ctx):
 async def roll20(ctx):
     dice5 = ['1','2','3','4','6','7','8', '9','10','11','12','13','14','15','16','17','18','19','20']
     await ctx.send('You rolled a {}!'.format(random.choice(dice5)))
+    
+@client.command()
+async def roll100(ctx):
+    myList = list(range(1, 101))
+    await ctx.send("You rolled a {}!".format(random.choice(myList)))
 
 #Below are the rolls for races and classes
     
