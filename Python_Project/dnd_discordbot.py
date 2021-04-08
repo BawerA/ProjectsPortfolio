@@ -25,7 +25,7 @@ async def helpme(ctx):
 
 #Dice rolls are below
 
-@client.command() #Test for rolling function of the bot, currently using D4
+@client.command() #Test for rolling function of the bot, currently using D2
 async def roll2(ctx):
     dice_roll2 = ['1','2']
     await ctx.send('You rolled a {}!'.format(random.choice(dice_roll2)))
@@ -35,42 +35,50 @@ async def roll4(ctx):
     dice = ['1','2','3','4']
     await ctx.send('You rolled a {}!'.format(random.choice(dice)))
     
-@client.command() #Test for rolling function of the bot, currently using D4
+@client.command() #Test for rolling function of the bot, currently using D6
 async def roll6(ctx):
     dice1 = ['1','2','3','4','6']
     await ctx.send('You rolled a {}!'.format(random.choice(dice1)))
 
-@client.command() #Test for rolling function of the bot, currently using D4
+@client.command() #Test for rolling function of the bot, currently using D8
 async def roll8(ctx):
     dice2 = ['1','2','3','4','6','7','8']
     await ctx.send('You rolled a {}!'.format(random.choice(dice2)))
     
-@client.command() #Test for rolling function of the bot, currently using D4
+@client.command() #Test for rolling function of the bot, currently using D10
 async def roll10(ctx):
     dice3 = ['1','2','3','4','6','7','8', '9','10']
     await ctx.send('You rolled a {}!'.format(random.choice(dice3)))
     
-@client.command() #Test for rolling function of the bot, currently using D4
+@client.command() #Test for rolling function of the bot, currently using D12
 async def roll12(ctx):
     dice4 = ['1','2','3','4','6','7','8', '9','10','11','12']
     await ctx.send('You rolled a {}!'.format(random.choice(dice4)))
     
-@client.command() #Test for rolling function of the bot, currently using D4
+@client.command() #Test for rolling function of the bot, currently using D20
 async def roll20(ctx):
     dice5 = ['1','2','3','4','6','7','8', '9','10','11','12','13','14','15','16','17','18','19','20']
     await ctx.send('You rolled a {}!'.format(random.choice(dice5)))
-    
-@client.command()
+
+@client.command() ##Test for rolling function of the bot, currently using D100
 async def roll100(ctx):
     myList = list(range(1, 101))
     await ctx.send("You rolled a {}!".format(random.choice(myList)))
 
 #Below are the rolls for races and classes
     
-@client.command() #Test for rolling function of the bot, currently using D4
+@client.command() #Test for rolling for races
 async def race(ctx):
     race = ['Dragonborn','Dwarf','Elf','Gnome', 'Half-Elf', 'Halfing','Human']
     await ctx.send('Your race is {}!'.format(random.choice(race)))
+    
+@client.command() #Test for rolling for a sub-class
+async def elf(ctx):
+    race = ['Elf']
+    sub_race = ['Aereni High Elf', 'Aereni Wood Elf', 'Dark Elf (Drow)', 'Eladrin']
+    await ctx.send('Your race is {}!'.format(random.choice(race)))
+    if race == ['Elf']:
+        await ctx.send('Your sub-race is {}!'.format(random.choice(sub_race)))
     
 @client.command()
 async def classes(ctx):
