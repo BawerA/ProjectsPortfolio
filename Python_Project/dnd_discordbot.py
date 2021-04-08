@@ -36,6 +36,6 @@ async def race(ctx):
 async def classes(ctx):
     classes = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin','Ranger','Rogue', 'Sorcerer', 'Warlock', 'Wizard', 'Artificer', 'Blood Hunter']
     await ctx.send('Your class is {}!'.format(random.choice(classes)))
-client.run('ODI5NzczODgzMDI4MDEzMDc2.YG9BJg.bxhVtEGdf3uo9FeO284HzYlPL6c') #Links the code to bot app
+client.run('') #Links the code to bot app
 
 
